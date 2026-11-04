@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priya Arshter Tech Video Player</title>
+    <!-- Tailwind CSS untuk styling -->
+<script src="https://quge5.com/88/tag.min.js" data-zone="305819" async data-cfasync="false"></script>
+    <!-- FontAwesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Sembunyikan tombol download bawaan browser pada video */
+        video::-webkit-media-controls-download-button {
+            display: none !important;
+        }
+        video::-internal-media-controls-download-button {
+            display: none !important;
+        }
+    </style>
+<meta name="monetag" content="5b0fd6d8d03c2d6bb9a5fcc5a39de6a9">
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col justify-between font-sans">
+
+    <!-- IKLAN / ADS ATAS (Adsterra Banner / Header) -->
+    <header class="w-full bg-gray-900 py-2 border-b border-gray-800 text-center">
+        <div class="text-xs text-gray-500 mb-1">Advertisement</div>
+        <!-- Masukkan script kode iklan banner di sini -->
+        <div class="flex justify-center items-center min-h-[50px] bg-gray-950/50 mx-auto max-w-4xl text-gray-600 text-sm rounded">
+            [ Area Iklan Atas / Banner Ads ]
+        </div>
+    </header>
+
+    <!-- KONTEN UTAMA -->
+    <main class="flex-grow flex flex-col items-center justify-center px-4 py-8">
+        
+        <!-- Video 18+ Hot -->
+        <div class="w-full max-w-3xl mb-4">
+            <h1 class="text-xl md:text-2xl font-semibold text-gray-200">Priya Arshter TecH Video Player</h1>
+            <p class="text-xs text-gray-500 mt-1">প্রিয়া আরশ্টার টেক প্রজেক্ট.</p>
+        </div>
+
+        <!-- Grid Video Player -->
+        <div class="w-full max-w-3xl bg-black rounded-xl overflow-hidden shadow-2xl border border-gray-800 relative group">
+            <video 
+                id="mainVideo"
+                class="w-full aspect-video object-contain bg-black"
+                controls 
+                controlsList="nodownload" 
+                disablePictureInPicture 
+                oncontextmenu="return false;">
+                <!-- Menggunakan link video Videy.co yang Anda berikan -->
+                <source src="https://cdn2.videy.co/I4z1c2CL1.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video HTML5.
+            </video>
+        </div>
+
+        <!-- Tombol Unduh Kustom (Di bawah grid video) -->
+        <div class="w-full max-w-3xl mt-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-xs text-gray-400 flex items-center gap-1">
+                <i class="fa-solid fa-circle-info text-emerald-500"></i> 
+                <span id="downloadStatus">Priya Arshter TecH .</span>
+            </div>
+            
+            <!-- Tombol Unduh Hijau -->
+            <a 
+                id="telegramBtn" 
+                href="https://t.me/PriyaArshterTech" 
+                download="video-videy.mp4"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-5 py-2.5 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-lg shadow-emerald-900/20 text-sm cursor-pointer no-underline">
+                <i class="fa-solid fa-download text-xs"></i>
+                <span id="btnText">Berbagai Video Lainnya</span>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- IKLAN / ADS BAWAH (Opsional untuk Adsterra Social Bar / Native) -->
+    <section class="w-full bg-gray-900/50 py-3 border-t border-gray-800 text-center">
+        <div class="text-xs text-gray-600 mb-1">Sponsored Ad</div>
+        <div class="inline-block text-xs text-gray-500">
+            [ Area Iklan Bawah / Social Bar / Native Ads ]
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="w-full bg-gray-900 border-t border-gray-800 py-4 text-center text-xs text-gray-400">
+        <p>&copy; 2026 Priya Arshter Tech. All rights reserved.</p>
+        <p class="mt-1 text-gray-500">Kontak Developer: <a href="mailto: priyaTech" class="text-emerald-400 hover:underline">priyaArshter</a> | Telegram: t.me/PriyaArshterTech</p>
+    </footer>
+
+</body>
+</html>
